@@ -1,0 +1,30 @@
+algorithm:
+  data_format: PremiseOnly
+  enable_san: false
+  path: data/algorithm/extractfeatures
+  metric_meta:
+  - ACC
+  - F1MAC
+  loss: CeCriterion
+  n_class: 2
+  task_type: Classification
+opencv:
+  data_format: PremiseOnly
+  enable_san: false
+  path: data/opencv/extractfeatures
+  metric_meta:
+  - ACC
+  - F1MAC
+  loss: CeCriterion
+  n_class: 2
+  task_type: Classification
+javabugs:
+  data_format: PremiseOnly
+  enable_san: false
+  path: data/javabugs/extractfeatures
+  metric_meta:
+  - ACC
+  - F1MAC
+  loss: CeCriterion
+  n_class: 2
+  task_type: Classification

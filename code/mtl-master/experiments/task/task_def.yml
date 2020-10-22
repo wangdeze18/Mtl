@@ -1,0 +1,37 @@
+CommentClassify:
+  data_format: PremiseAndOneHypothesisnl
+  enable_san: true
+  path: data/CC/extractfeatures
+  labels:
+  - COHERENT
+  - NOT_COHERENT
+  metric_meta:
+  - ACC
+  - F1
+  loss: CeCriterion
+  n_class: 2
+  task_type: Classification
+AuthorAttr:
+  data_format: PremiseOnly
+  enable_san: false
+  path: data/AA/extractfeatures
+  metric_meta:
+  - ACC
+  - F1MAC
+  loss: CeCriterion
+  n_class: 13
+  task_type: Classification
+dfd:
+  data_format: PremiseAndOneHypothesiscode
+  enable_san: true
+  path: data/DD/extractfeatures
+  labels:
+  - duplicated
+  - unduplicated
+  metric_meta:
+  - ACC
+  - F1MAC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
